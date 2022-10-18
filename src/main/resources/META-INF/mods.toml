@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+# The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
+# Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
+license="MIT"
+# A URL to refer people to when problems occur with this mod
+#issueTrackerURL="https://github.com/ColinJG09/charcoal-plus/issues" #optional
+# A list of mods - how many allowed here is determined by the individual mod loader
+[[mods]]
+modId="charcoalplus"
+version="${file.jarVersion}"
+ # A display name for the mod
+displayName="Charcoal+"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/charcoalplus-forge"
+logoFile="charcoalplus.png"
+credits="Credits to Apis035 for making the source code public."
+authors="ColinBashful"
+description='Charcoal block, charcoal piece, and coal piece'
+[[dependencies.charcoalplus]]
+    # the modid of the dependency
+    modId="forge"
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true
+    # The version range of the dependency
+    versionRange="[43,)"
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+[[dependencies.charcoalplus]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
